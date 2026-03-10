@@ -1,0 +1,12 @@
+[build]
+  command = "echo 'Building PHP project'"
+  publish = "/"
+
+[dev]
+  command = "php -S localhost:3000"
+  port = 3000
+
+[[redirects]]
+  from = "/*"
+  to = "/index.php"
+  status = 200
